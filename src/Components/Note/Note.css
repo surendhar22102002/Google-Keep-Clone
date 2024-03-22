@@ -1,0 +1,19 @@
+.note_divTag {
+  @apply grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-[50px] justify-items-center;
+}
+
+.note {
+  @apply border-2 border-gray-500 pt-5 px-5 rounded-lg min-w-[260px] max-w-[260px] md:min-w-[300px] md:max-w-[300px] mt-8 flex-1;
+}
+
+.note h1 {
+  @apply mb-[15px] text-lg font-medium;
+}
+
+.note p {
+  @apply font-normal pb-8  overflow-hidden;
+}
+
+.note button {
+  @apply relative float-right text-red-600 border-none outline-none;
+}

@@ -1,0 +1,22 @@
+.create_note {
+  @apply relative w-[280px] md:w-[500px] mt-[30px] mb-5 mx-auto p-[15px] rounded-[7px];
+  box-shadow: rgba(0, 0, 0, 0.3) 1px 8px 20px, rgba(0, 0, 0, 0.22) 1px 10px 10px;
+}
+
+.inputTag,
+.textareaTag {
+  @apply w-full text-[1.2em] resize-none p-1 border-[none] outline-none;
+  font-family: inherit;
+}
+
+.textareaTag {
+  @apply mt-4;
+}
+
+.create_note button {
+  @apply absolute bottom-[10px] text-white w-[50px] h-[50px] cursor-pointer rounded-[50%] border-[none] right-[12px] bg-[#27ae60] outline-none hover:bg-[#27ae60];
+}
+
+/* .create_note button {
+  @apply absolute bottom-[10px] text-black w-[50px] h-[50px] cursor-pointer rounded-[50%] border-[none] right-[12px] bg-[white] outline-none 
+} */

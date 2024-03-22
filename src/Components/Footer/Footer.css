@@ -1,0 +1,4 @@
+.footer {
+  @apply bg-[#202124] text-center text-gray-100 font-semibold text-lg py-5 
+    absolute right-0 left-0 bottom-0;
+}
