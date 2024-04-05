@@ -5,3 +5,7 @@
 .header_h1 {
   @apply text-4xl font-semibold items-center self-center pt-[5px];
 }
+
+.keepImg {
+  src: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Google_Keep_icon_%282020%29.svg/436px-Google_Keep_icon_%282020%29.svg.png");
+}

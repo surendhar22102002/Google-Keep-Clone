@@ -5,7 +5,7 @@ const Header = () => {
         <>
             <div className="hearder_div">
                 <img
-                    src="../../../public/Google_Keep_icon_(2020).svg.png"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Google_Keep_icon_%282020%29.svg/436px-Google_Keep_icon_%282020%29.svg.png"
                     alt="Google Keep Icon"
                     className="keepImg"
                     width={"40px"}

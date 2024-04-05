@@ -1,7 +1,7 @@
 import AddIcon from "@mui/icons-material/Add";
 import Fab from "@mui/material/Fab";
 import Zoom from "@mui/material/Zoom";
-import { useState, } from "react";
+import { useState, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { postAdd } from "../../store/features/postsSlice";
 import "./CreateNotes.css";
@@ -9,6 +9,7 @@ import "./CreateNotes.css";
 
 const CreateNotes = () => {
   const [expanded, setExpanded] = useState(false);
+  const inputRef = useRef()
 
   const expand = () => {
     setExpanded(true);
@@ -45,6 +46,8 @@ const CreateNotes = () => {
         <form className="border-2 border-gray-500 create_note">
           {expanded && (
             <input
+            autoFocus
+            ref={inputRef}
               type="text"
               placeholder="Title"
               value={title}
@@ -69,7 +72,7 @@ const CreateNotes = () => {
           </h3> */}
 
           <Zoom in={() => { expanded }}>
-            <Fab onClick={onPostClicked} disabled={!canSave}>
+            <Fab onClick={onPostClicked}  disabled={!canSave}>
               <AddIcon />
             </Fab>
           </Zoom>
